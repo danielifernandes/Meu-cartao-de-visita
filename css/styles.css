@@ -1,0 +1,9 @@
+body{
+    background: #000;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
