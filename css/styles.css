@@ -1,55 +1,100 @@
-body{
+body {
     background: url(../imagens/reza-namdari-ZgZsKFnSbEA-unsplash2.jpg) black;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Lato', sans-serif;
     color: white;
 } 
  
-.container{
+.container {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    line-height: 3px;
+    line-height: 7px;
 }
 
-img{
-    max-width: 100%;
+img {
+    max-width: 30%;
     border-radius: 50%;
-    max-width: 15%;
+    max-width: 50%;
     display: block;
-    margin: 90px auto 10px;
+    margin: 30px auto 10px;
     border: solid white;
-    
 }
+
+@media (min-width: 768px) {
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+        max-width: 15%;
+        display: block;
+        margin: 90px auto 10px;
+        border: solid white;
+    }
+}
+
 
 .text .name {
     font-family: 'Rubik', sans-serif;
     display: flex; 
     justify-content: center;
-    font-size: 45px;
+    font-size: 25px;
 }
 
-.text .hello{
+@media (min-width: 768px) {
+    .text .name {
+        font-family: 'Rubik', sans-serif;
+        display: flex; 
+        justify-content: center;
+        font-size: 45px;
+    }
+}
+
+.text .hello {
     display: flex; 
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.text .work{
+@media (min-width:768px) {
+    .text .hello {
+        display: flex; 
+        justify-content: center;
+        font-size: 30px;
+    }
+}
+
+.text .work {
     display: flex; 
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.contact ul li{
-    display: inline-block;
-    margin-right: 1px;
+@media (min-width:768px) {
+    .text .work {
+        display: flex; 
+        justify-content: center;
+        font-size: 30px;
+    }
 }
 
+.contact ul li {
+    display: block;
+    justify-content: center;
+}
 
-.contact ul li a{
+@media (min-width: 768px) {
+    .contact ul li {
+        display: inline-block;
+        margin-right: 1px;
+        align-items: center ;
+        
+    }
+}
+
+.contact ul li a {
     text-decoration: none;
     font-size: 17px;
     color: white;
@@ -58,8 +103,7 @@ img{
     padding-right: 15px;
 }
 
-
-.contact a:hover{
+.contact a:hover {
     background: white;
     color: black;
     border-radius: 5px;
